@@ -17,8 +17,7 @@ function setup() {
   
   ground =new Ground(200,390,400,20);
   right = new Ground(390,200,20,400);
-  left = new Ground(10,200,20,400);
-  top_wall = new Ground(200,10,400,20);
+ 
  
   rectMode(CENTER);
   ellipseMode(RADIUS);
@@ -28,8 +27,6 @@ function draw()
 {
   background(51);
   ground.show();
-  top_wall.show();
-  left.show();
   right.show();
   Engine.update(engine);
 }
